@@ -92,7 +92,6 @@ class ElasticsearchServiceProvider extends ServiceProvider
         $version = $this->app->version();
 
         if (
-            version_compare($version, '5.1', '>=') &&
             str_starts_with($version, 'Lumen') &&
             $this->app->runningInConsole()
         ) {
